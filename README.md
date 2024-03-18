@@ -1,2 +1,2 @@
 # Projetos-DWI
-Projetosdo primeiro semestre de Desenvolvimento Web na fatec
+Projetos do primeiro semestre de Desenvolvimento Web na fatec
