@@ -1,0 +1,15 @@
+img{
+    width: 100%;
+}
+p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+@media only screen and (min-width: 1400px){
+    .container{
+        display: flex;
+    }
+    img{
+        width: 50%;
+    }
+}
