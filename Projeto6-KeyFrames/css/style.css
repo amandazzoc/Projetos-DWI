@@ -1,0 +1,26 @@
+body{
+    background-color: antiquewhite;
+}
+#bolinha{
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+    position: relative;
+    border-radius: 50%;
+    animation: mov-bola 15s infinite;
+}
+/* @keyframes mov-bola {
+    0% {margin-left: 0px;}
+    25% {margin-left: 500px; margin-top: 0px;}
+    50% {margin-left:500px; margin-top: 500px;}
+    75% {margin-left: 0px; margin-top: 500px;}
+    100% {margin-left: 0px;}
+} */ 
+@keyframes mov-bola {
+    0% {margin-left: 0px;}
+    7.69% {margin-left: 600px; margin-top: 0px;}
+    15.38% {margin-left: 600px; margin-top: 100px}
+    23.07% {margin-left: 500px; margin-top: 100px}
+    30.76% {margin-left: 500px; margin-top: 200px}
+    38.45% {margin-left: 1300px; margin-top: 200px;}
+}
