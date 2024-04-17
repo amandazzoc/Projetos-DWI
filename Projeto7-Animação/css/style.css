@@ -1,0 +1,35 @@
+
+body {
+  background: #24aecd;
+}
+#anima-div {
+    height:299px;
+    width:200px;
+    background:url('../personagem.png') -0px -1px no-repeat;
+    animation: play .8s steps(4) infinite;
+}
+#anima-div2 {
+    height:299px;
+    width:200px;
+    background:url('../personagem.png') -0px -598px no-repeat;
+    animation: play .8s steps(4) infinite;
+}
+#anima-div3 {
+    height:299px;
+    width:200px;
+    background:url('../personagem.png') -0px -299px no-repeat;
+    animation: play .8s steps(4) infinite;
+}
+#anima-div4 {
+    height:299px;
+    width:200px;
+    background:url('../personagem.png') -0px -897px no-repeat;
+    animation: play .8s steps(4) infinite;
+}
+@keyframes play {
+100% { background-position-x: -800px;}
+}
+
+.content{
+    display: flex;
+}
