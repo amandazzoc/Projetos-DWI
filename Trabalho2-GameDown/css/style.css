@@ -1,0 +1,31 @@
+body{
+    background-image: url("../img/fundo.png");
+    background-size: cover;
+    background-attachment: fixed;
+}
+#anima-div {
+    height:100px;
+    width:48px;
+    background:url("../img/direita.png") -0px -0px no-repeat;
+    animation: play .8s steps(4) infinite, mov-person 15s infinite;
+}
+@keyframes play {
+100% { background-position-x: -192px;}
+}
+ @keyframes mov-person {
+    0% { margin: 660px 0px}
+    5% {margin: 660px 0px 0px 230px}
+    10% {margin: 430px 0px 0px 230px;}
+    15% {margin: 430px 0px 0px 420px}
+    20% {margin: 170px 0px 0px 420px}
+    25% {margin: 170px 0px 0px 760px}
+    30% {margin: 340px 0px 0px 760px}
+    35% {margin: 340px 0px 0px 1100px}
+    40% {margin: 240px 0px 0px 1100px;}
+    45% {margin: 240px 0px 0px 1210px}
+    47% {margin: 220px 0px 0px 1240px}
+    49% {margin: 190px 0px 0px 1280px}
+    51% {margin: 190px 0px 0px 1350px}
+    53% {margin: 220px 0px 0px 1380px}
+    100% {margin: 660px 0px;} 
+} 
