@@ -1,21 +1,21 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* resetar as config padrão */
 }
 body {
-    overflow: hidden;
-    display: flex;
+    overflow: hidden; /* Esconder a barra de rolagem */
+    display: flex; /* centralizar a div */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(0,115,184,1) 0%, rgba(0,22,255,1) 100%);
-    height: 100vh; /* Certifique-se de que o corpo ocupa toda a altura da tela */
+    background: linear-gradient(90deg, rgba(0,115,184,1) 0%, rgba(0,22,255,1) 100%); /* gradiente */
+    height: 100vh; 
 }
 .title{
     font-size: 64px;
     color: #f2f2f2;
-    font-family: "liberation-sans", sans-serif;
+    font-family: "liberation-sans", sans-serif; /* fonte importada */
     font-weight: 700;
     font-style: normal;
 }
@@ -30,9 +30,9 @@ body {
     height:60px;
     width:26px;
     background-image: url("../img/direita.png");
-    animation: play .8s steps(4) infinite, mov-person 15s infinite;
+    animation: play .8s steps(4) infinite, mov-person 15s infinite; /* o primeiro faz o sprite ficar animado e o segundo faz ele andar */
     position: relative; 
-    z-index: 1;
+    z-index: 1; /* camada */
 }
 .arvore {
     height: 147px;
@@ -41,7 +41,7 @@ body {
     position: absolute;  
     top: 260px; 
     left: 200px; 
-    z-index: 2;
+    z-index: 2; /* camada */
 }
 .muralha {
     height: 191px;
@@ -49,16 +49,16 @@ body {
     background: url("../img/muralhar.png");
     position: absolute;  
     top: 120px; 
-    left: 270px; /* Posição absoluta em relação à tela */
+    left: 270px;
     z-index: 2;
 }
 .arvoref {
     height: 169px;
     width: 130px;
-    background: url("../img/arvoref.png"); /* Corrigi o nome do arquivo */
+    background: url("../img/arvoref.png"); 
     position: absolute;  
     bottom: 160px; 
-    left: 830px; /* Posição absoluta em relação à tela */
+    left: 830px; 
     z-index: 3;
 }
 .plant1 {
@@ -84,7 +84,7 @@ body {
     100%{background-position-x: -120px}
 }
 @keyframes mov-person {
-       0% { margin: 420px 0px; background-image: url("../img/direita.png");}
+       0% { margin: 420px 0px; background-image: url("../img/direita.png");} /* A cada etapa, muda a imagem, fazendo o boneco se virar */
         3% {margin: 420px 0px 0px 150px; background-image: url("../img/direita.png");}
         6% {margin: 270px 0px 0px 150px; background-image: url("../img/costa.png");}
         9% {margin: 270px 0px 0px 270px; background-image: url("../img/direita.png");}
