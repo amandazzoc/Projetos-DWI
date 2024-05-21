@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, rgba(0,115,184,1) 0%, rgba(0,22,255,1) 100%); /* gradiente */
+    background: linear-gradient(90deg, rgb(13, 152, 238) 0%, rgba(0,22,255,1) 100%); /* gradiente */
     height: 100vh; 
 }
 .title{
@@ -29,7 +29,7 @@ body {
 #anima-div {
     height:60px;
     width:26px;
-    background-image: url("../img/direita.png");
+
     animation: play .8s steps(4) infinite, mov-person 15s infinite; /* o primeiro faz o sprite ficar animado e o segundo faz ele andar */
     position: relative; 
     z-index: 1; /* camada */
@@ -84,7 +84,7 @@ body {
     100%{background-position-x: -120px}
 }
 @keyframes mov-person {
-       0% { margin: 420px 0px; background-image: url("../img/direita.png");} /* A cada etapa, muda a imagem, fazendo o boneco se virar */
+       0% { margin: 420px 0px; background-image: url("../img/costa.png");} /* A cada etapa, muda a imagem, fazendo o boneco se virar */
         3% {margin: 420px 0px 0px 150px; background-image: url("../img/direita.png");}
         6% {margin: 270px 0px 0px 150px; background-image: url("../img/costa.png");}
         9% {margin: 270px 0px 0px 270px; background-image: url("../img/direita.png");}
